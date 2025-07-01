@@ -69,10 +69,7 @@ models:
     model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
   generation:
     llama_cpp_model_path: "models/mistral-7b-instruct.Q4_K_M.gguf"
-    model_choice: "spanish"
-    models:
-      spanish:
-        max_tokens: 256
+    max_tokens: 256
 ```
 
 *Note:* To work with this type of Q&A dataset, you need an instruction-tuned model.
