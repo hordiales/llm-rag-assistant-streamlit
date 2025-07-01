@@ -6,11 +6,11 @@ llm-rag-assistant is a fully local, retrieval-augmented chatbot powered by llama
 ## 🚀 Features
 -	🔍 Semantic Search with multilingual embeddings (sentence-transformers)
 -	🧠 Local LLM inference without a GPU using optimized GGUF models + llama-cpp-python
---	💻 Runs on standard laptops and desktops — no CUDA, no GPU, no special hardware required
---	🔒 No API keys, no cloud dependency — fully private and offline
---	🌐 Instant web interface with Streamlit
---	🐳 Docker & Docker Compose ready for easy deployment
---	🗂️ Plug-and-play with any Q&A dataset in JSON format
+-	💻 Runs on standard laptops and desktops — no CUDA, no GPU, no special hardware required
+-	🔒 No API keys, no cloud dependency — fully private and offline
+-	🌐 Instant web interface with Streamlit
+-	🐳 Docker & Docker Compose ready for easy deployment
+-	🗂️ Plug-and-play with any Q&A dataset in JSON format
 
 RAG Local - Instructions
 ===============================
@@ -36,6 +36,9 @@ For example
 ```bash
    wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q4_K_M.gguf -O mistral-7b-instruct.Q4_K_M.gguf
 ```
+
+Open source model, apache 2.0 license
+  https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 
 4. Build a question and answer dataset
 
