@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  scibot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm-rag-localhost-streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      #- ./models:/models  # Asegurate de tener tu .gguf aquí
+      - ../models:/models  # Asegurate de tener tu .gguf aquí
+      #- ./precalculado:/app  # contiene dataset_index.faiss y qa.json
+    environment:
+      - MODEL_PATH=/models/mistral-7b-instruct.Q4_K_M.gguf
